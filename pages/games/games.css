@@ -28,6 +28,16 @@ body {
     top: 0;
     width: 100%;
     border-bottom: 1px solid #4E4E51;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.header-notification {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
 }
 
 .games-content {
