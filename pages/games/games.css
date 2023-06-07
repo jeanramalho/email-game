@@ -5,7 +5,6 @@
 }
 
 body {
-
     background: #121214;
     font-family: Arial, Helvetica, sans-serif;
     color: #fff;
@@ -24,15 +23,17 @@ body {
 
 .games-header {
     grid-area: header;
-    background: green;
+    background: #121214;
     position: fixed;
     top: 0;
     width: 100%;
+    border-bottom: 1px solid #4E4E51;
 }
 
 .games-content {
     grid-area: main;
-    background: blue;
+    background: #121214;
+    height: 110vh;
 }
 
 .games-footer {
