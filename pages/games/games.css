@@ -76,6 +76,25 @@ body {
     border: 3px solid #fff;
 }
 
+.games-disponiveis {
+    display: flex;
+    flex-direction: row;
+}
+
+.game-control {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    background: #0e7a0d;
+    border-radius: 5px;
+}
+
+.icon-game {
+    width: 40px;
+    height: 40px;
+}
+
 .games-footer {
     grid-area: footer;
     background: red;
