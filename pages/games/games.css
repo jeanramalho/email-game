@@ -84,7 +84,7 @@ body {
 }
 
 .games-disponiveis p {
-    font-size: 20pt;
+    font-size: 14pt;
     font-weight: 600;
 }
 
@@ -92,15 +92,15 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 8px;
+    padding: 5px;
     background: #0e7a0d;
     border-radius: 8px;
     margin: 3px 10px;
 }
 
 .icon-game {
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
 }
 
 .games-footer {
