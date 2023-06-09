@@ -74,6 +74,7 @@ body {
 
 .games-grid {
     width: 45%;
+    min-width: 350px;
     height: 500px;
     border: 3px solid #fff;
     display: flex;
@@ -110,16 +111,20 @@ body {
 }
 
 .card-games {
-    padding: 8px;
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem;
+    margin-top: 20px;
+    justify-content: center;
+
 }
 
 .card-game {
     width: 30%;
-    flex-grow: 1;
+    min-width: 120px;
+    flex-grow: 0;
     flex-shrink: 1;
+    margin: 10px;
+
 }
 
 .card-game img {
