@@ -64,10 +64,15 @@ body {
     grid-area: main;
     background: #121214;
     height: 110vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .games-grid {
     width: 60%;
+    height: 500px;
     border: 3px solid #fff;
 }
 
