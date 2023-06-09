@@ -79,20 +79,28 @@ body {
 .games-disponiveis {
     display: flex;
     flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.games-disponiveis p {
+    font-size: 20pt;
+    font-weight: 600;
 }
 
 .game-control {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 15px;
+    padding: 8px;
     background: #0e7a0d;
-    border-radius: 5px;
+    border-radius: 8px;
+    margin: 3px 10px;
 }
 
 .icon-game {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
 }
 
 .games-footer {
