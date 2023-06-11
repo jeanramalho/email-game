@@ -32,6 +32,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 10px;
+    z-index: 999;
 }
 
 .games-header p {
@@ -131,6 +132,35 @@ body {
     width: 100%;
     background-size: cover;
     border-radius: 8px;
+}
+
+.games-info {
+    width: 45%;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.games-info p {
+    font-size: 12pt;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.icon-download {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    background: #0e7a0d;
+    border-radius: 8px;
+    margin: 3px 10px;
+}
+
+.download-games {
+    width: 20px;
+    height: 20px;
 }
 
 .games-footer {
