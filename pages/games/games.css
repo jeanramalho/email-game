@@ -71,7 +71,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 100px 10px;
+    margin: 60px 10px;
 }
 
 .games-grid {
@@ -123,16 +123,22 @@ body {
 .card-game {
     width: 30%;
     min-width: 120px;
+    height: 20%;
+    min-height: 90px;
     flex-grow: 0;
     flex-shrink: 1;
     margin: 10px;
-
+    border: 1px solid #cecece;
+    border-radius: 8px;
+    cursor: pointer;
 }
 
 .card-game img {
     width: 100%;
+    height: 100%;
     background-size: cover;
     border-radius: 8px;
+    object-fit: fill;
 }
 
 .games-info {
@@ -179,13 +185,14 @@ body {
 
 .download-options {
     width: 45%;
+    min-width: 350px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    flex-wrap: wrap;
+    flex-wrap: no-wrap;
     flex-shrink: 1;
     flex-grow: .5;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 
 .download-ios, .download-android {
@@ -213,4 +220,28 @@ body {
     width: 30px;
     height: 30px;
     margin: 10px;
+}
+
+.games-menu {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.games-menu p {
+    text-transform: uppercase;
+    font-size: 10pt;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.active {
+    color: #0e7a0d;
+}
+
+.footer-logo {
+    width: 20px;
+    height: 20px;
 }
