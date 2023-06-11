@@ -126,7 +126,7 @@ body {
 .card-game {
     width: 29%;
     min-width: 90px;
-    height: 23%;
+    height: 21%;
     min-height: calc(90px - 20px);
     flex-grow: 0;
     flex-shrink: 1;
