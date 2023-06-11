@@ -187,11 +187,25 @@ body {
 
 .download-ios, .download-android {
     width: 48%;
-    height: 40px;
-    background: #4E4E51;
+    height: 70px;
+    background: #353535;
     margin-right: 10px;
     border-radius: 8px;
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.download-ios p, .download-android p {
+    font-size: 14pt;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.ios-logo, .android-logo {
+    width: 30px;
+    height: 30px;
+    margin: 10px;
 }
