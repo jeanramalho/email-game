@@ -17,7 +17,7 @@ body {
     "main main main" 
     "footer footer footer";
     grid-template-columns: auto auto auto;
-    grid-template-rows: auto 100vh auto;
+    grid-template-rows: auto auto auto;
 }
 
 .games-header {
@@ -66,22 +66,21 @@ body {
 .games-content {
     grid-area: main;
     background: #121214;
-    height: 150vh;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 30px 0;
+    padding: 30px 0;
+    border: 2px solid #fff;
 }
 
 .games-grid {
     width: 45%;
-    min-width: 350px;
     height: auto;
-    margin-top: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    margin-top: 80px;
+    margin-bottom: 30px;
 }
 
 .games-disponiveis {
@@ -90,6 +89,7 @@ body {
     justify-content: flex-start;
     align-items: center;
     width: 100%;
+    margin-bottom: 30px;
 }
 
 .games-disponiveis p {
@@ -115,23 +115,25 @@ body {
 .card-games {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 20px;
-    justify-content: space-evenly;
+    gap: 1rem;
+    width: 100%;
+    height: 450px;
+    overflow-y: scroll;
     align-items: center;
-    height: auto;
-    padding: 20px;
+    justify-content: center;
 }
 
 .card-game {
-    width: 29%;
-    min-width: 90px;
-    height: 21%;
-    min-height: calc(90px - 20px);
-    flex-grow: 0;
-    flex-shrink: 1;
-    border: 1px solid #cecece;
+    width: 30%;
+    min-width: 100px;
+    max-width: 200px;
+    height: calc(25vh - 60px);
+    min-height: 80px;
+    max-width: 170px;
     border-radius: 8px;
-    cursor: pointer;
+    flex-shrink: 0;
+    flex-grow: 0;
+
 }
 
 .card-game img {
@@ -191,9 +193,9 @@ body {
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: no-wrap;
-    flex-shrink: 1;
-    flex-grow: .5;
-    margin-bottom: 30px;
+    flex-shrink: 0.7;
+    flex-grow: 0.5;
+    margin-bottom: 70px;
 }
 
 .download-ios, .download-android {
