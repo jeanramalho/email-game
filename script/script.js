@@ -28,12 +28,11 @@ else{
 
 
 function acessarButton() {
-    console.log(validaEmail())
 
     if(inputEmail.value == "" && validaEmail() == false) {
-        responseEmail.innerHTML = "<h1>Insira um email válido</h1>"
+        responseEmail.innerHTML = "<p>Insira um email válido</p>"
     } else if( validaEmail() == true) (
-        alert("email válido")
+        window.location.replace("../pages/games/games.html")
     )
 }
 
