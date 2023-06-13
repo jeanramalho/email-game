@@ -2,6 +2,8 @@
 let inputEmail = document.getElementById('inputEmail')
 let responseEmail = document.getElementById('responseEmail')
 
+let test = document.getElementById('teste')
+
 
 function validaEmail() {
 
@@ -32,7 +34,8 @@ function acessarButton() {
     if(inputEmail.value == "" && validaEmail() == false) {
         responseEmail.innerHTML = "<p>Insira um email válido</p>"
     } else if( validaEmail() == true) (
-        window.location.replace("../pages/games/games.html")
+        window.location.replace("../pages/games/games.html"),
+        localStorage.setItem('email', email)
     )
 }
 
