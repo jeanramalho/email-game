@@ -2,6 +2,10 @@
 let inputEmail = document.getElementById('inputEmail')
 
 function acessarButton() {
-    console.log(inputEmail.value)
+    if(inputEmail.value == "") {
+        alert("Por favor, insira uma email válido!")
+    } else (
+        alert("email válido")
+    )
 }
 
