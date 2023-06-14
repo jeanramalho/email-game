@@ -63,6 +63,10 @@ body {
     cursor: pointer;
 }
 
+.header-user:hover {
+    color: rgb(98, 98, 207);
+}
+
 .games-content {
     grid-area: main;
     background: #121214;
