@@ -87,6 +87,10 @@ body {
     margin: 8px;
 }
 
+.mail-input {
+    color: #fff;
+}
+
 .acessar {
     width: 85%;
     height: 45px;
