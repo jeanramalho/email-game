@@ -34,8 +34,8 @@ function acessarButton() {
     if(inputEmail.value == "" && validaEmail() == false) {
         responseEmail.innerHTML = "<p>Insira um email válido</p>"
     } else if( validaEmail() == true) (
-        window.location.replace("../pages/games/games.html"),
-        localStorage.setItem('email', email)
+        // window.location.replace("../pages/games/games.html"),
+        localStorage.setItem('email', inputEmail.value)
     )
 }
 
