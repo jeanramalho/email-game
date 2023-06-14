@@ -7,7 +7,7 @@
 body {
     background: #121214;
     font-family: Arial, Helvetica, sans-serif;
-    color: #fff;
+    color: #fff !important;
 }
 
 .games-container {
@@ -90,7 +90,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    align-items: center;
+    align-items: center !important;
     width: 100%;
     margin-bottom: 30px;
 }
@@ -208,9 +208,9 @@ body {
     background: #353535;
     margin-right: 10px;
     border-radius: 8px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
     margin-top: 20px;
     cursor: pointer;
     margin-bottom: 20px;
