@@ -65,16 +65,17 @@ body {
 
 .input-email {
     width: 85%;
-    height: 50px;
+    height: 80px;
     margin-top: 55px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
 .input-email input {
     width: 100%;
-    height: 100%;
+    height: 75%;
     padding: 8px;
     background: #121214;
     border-radius: 4px;
@@ -89,6 +90,17 @@ body {
 
 .mail-input {
     color: #fff;
+}
+
+.responseEmail {
+    color: red;
+    margin-top: 8px;
+}
+
+.responseEmail p {
+    font-size: 10pt;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .acessar {

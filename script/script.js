@@ -31,10 +31,11 @@ else{
 
 function acessarButton() {
 
-    if(inputEmail.value == "" && validaEmail() == false) {
-        responseEmail.innerHTML = "<p>Insira um email válido</p>"
+    if(inputEmail.value == "" || validaEmail() == false) {
+        responseEmail.innerHTML = "<p>Insira um email válido</p>",
+        inputEmail.value = ""
     } else if( validaEmail() == true) (
-        // window.location.replace("../pages/games/games.html"),
+        window.location.replace("../pages/games/games.html"),
         localStorage.setItem('email', inputEmail.value)
     )
 }
