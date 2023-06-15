@@ -67,6 +67,19 @@ body {
     color: rgb(98, 98, 207);
 }
 
+.header-menu {
+    height: 100%;
+    width: auto;
+}
+
+.lista-menu {
+    list-style: none;
+    border: 1.5px solid #4E4E51;
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+}
+
 .games-content {
     grid-area: main;
     background: #121214;
