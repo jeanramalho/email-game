@@ -80,6 +80,14 @@ body {
     border-radius: 8px;
 }
 
+.lista-active {
+    display: block;
+}
+
+.lista-inactive {
+    display: none;
+}
+
 .item-menu {
     padding: 7px;
     cursor: pointer;
@@ -91,6 +99,7 @@ body {
     width: 100%;
     text-align: center;
     text-transform: uppercase;
+    background: none;
     color: red;
     font-weight: 600;
 }
