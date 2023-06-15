@@ -76,12 +76,14 @@ body {
     list-style: none;
     border: 1.5px solid #4E4E51;
     height: 100%;
-    width: 100%;
+    width: auto;
+    border-radius: 8px;
 }
 
 .item-menu {
     padding: 7px;
     cursor: pointer;
+    border-radius: 8px;
 }
 
 .item-sair {
