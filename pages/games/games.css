@@ -77,7 +77,27 @@ body {
     border: 1.5px solid #4E4E51;
     height: 100%;
     width: 100%;
-    padding: 10px;
+}
+
+.item-menu {
+    padding: 7px;
+    cursor: pointer;
+}
+
+.item-sair {
+    border-top: 1.5px solid #4E4E51;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    color: red;
+    font-weight: 600;
+}
+
+.item-sair:hover {
+    background: red;
+    color: #fff;
+    font-weight: 300;
+
 }
 
 .games-content {
