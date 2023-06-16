@@ -3,10 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
+    <link rel="stylesheet" href="./notification.css">
+
+    <script src="./notification.js" defer></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js" defer></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js" defer></script>
+
     <title>Notifications</title>
 </head>
 <body>
-    
+    <div class="notification-container">
+        <header class="games-header">
+            <p>notificações</p>
+            <div class="icons-header">
+                <ion-icon name="home-outline" class="header-home" id="homeIcon"></ion-icon>
+               
+                <ion-icon name="person-circle-outline" class="header-user" id="userIcon"></ion-icon>
+                
+               
+
+                <div class="header-menu lista-inactive" id="userMenu">
+                    <ul class="lista-menu">
+                        <li class="item-menu" id="userNameMenu"></li>
+                        <li><button class="item-menu item-sair" id="sairButton">sair</button></li>
+                    </ul>
+                </div>
+                               
+
+            </div>
+        </header>
+    </div>
 </body>
 </html>

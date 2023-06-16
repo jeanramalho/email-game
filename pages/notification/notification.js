@@ -4,7 +4,7 @@ let sairButton = document.getElementById('sairButton')
 let userMenu = document.getElementById("userMenu")
 let userIcon = document.getElementById('userIcon')
 let userNameMenu = document.getElementById('userNameMenu')
-let notIcon = document.getElementById('notIcon')
+let homeIcon = document.getElementById('homeIcon')
 
 // Recupera email do usuário
 
@@ -37,8 +37,8 @@ userIcon.addEventListener('click', function(){
 
 // Escuta o click do ícone de notificações e redireciona o usuário
 
-notIcon.addEventListener('click', function(){
-    window.location.href = '../notification/notification.html'
+homeIcon.addEventListener('click', function(){
+    window.location.href = '../games/games.html'
 })
 
 // Apagar o regfistro de usuário e volta à página index.html

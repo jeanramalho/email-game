@@ -63,7 +63,7 @@ body {
     cursor: pointer;
 }
 
-.header-user:hover {
+.header-user:hover, .header-notification:hover {
     color: rgb(98, 98, 207);
 }
 
