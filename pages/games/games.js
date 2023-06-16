@@ -6,13 +6,12 @@ let email = localStorage.getItem('email');
 
 
 console.log(email)
+console.log(userIcon)
 
 function userClick() {
-    userMenu.addEventListener('click', function() {
-        console.log("clicado")
-    })
+    userIcon.addEventListener('click', botaoSairß)
 }
 
 function botaoSair() {
-    
+    console.log("clicado")
 }
