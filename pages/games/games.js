@@ -1,5 +1,5 @@
 let sairButton = document.querySelector('#sairButton')
-let userMenu = document.querySelector('#userMenu')
+let userMenu = document.getElementById('userMenu')
 
 let email = localStorage.getItem('email');
 
@@ -7,9 +7,9 @@ let email = localStorage.getItem('email');
 console.log(email)
 
 function userClick() {
-    if(userMenu.classList.contains("lista-active")) {
-        console.log("tem a classe")
-    }
+    userMenu.addEventListener('click', function() {
+        console.log("clicado")
+    })
 }
 
 function botaoSair() {
