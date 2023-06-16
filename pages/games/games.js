@@ -1,6 +1,6 @@
-let sairButton = document.querySelector('#sairButton')
+let sairButton = document.getElementById('sairButton')
 let userMenu = document.getElementById("userMenu")
-let userIcon = document.querySelector('#userIcon')
+let userIcon = document.getElementById('userIcon')
 let userNameMenu = document.getElementById('userNameMenu')
 
 
@@ -16,8 +16,6 @@ function validaUser(emailUser) {
 
 validaUser(email)
 
-console.log(sairButton, userMenu, userIcon)
-
 
 userIcon.addEventListener('click', function(){
     if(userMenu.classList.contains('lista-active')) {
@@ -28,4 +26,6 @@ userIcon.addEventListener('click', function(){
         userMenu.classList.add('lista-active')
     }
 })
+
+
 
