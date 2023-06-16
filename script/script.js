@@ -1,9 +1,11 @@
 
+// Importa elementos html
+
 let inputEmail = document.getElementById('inputEmail')
 let responseEmail = document.getElementById('responseEmail')
 
-let test = document.getElementById('teste')
 
+// Função que valida se o emaiul é válido
 
 function validaEmail() {
 
@@ -28,6 +30,7 @@ else{
 }
 
 
+// Se o email for válido o usuário é redirecionado para a página de games
 
 function acessarButton() {
 
