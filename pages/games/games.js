@@ -27,5 +27,9 @@ userIcon.addEventListener('click', function(){
     }
 })
 
+sairButton.addEventListener('click', function(){
+    localStorage.clear()
+    location.reload();
+})
 
 
