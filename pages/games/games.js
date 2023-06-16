@@ -1,10 +1,23 @@
 let sairButton = document.querySelector('#sairButton')
 let userMenu = document.getElementById("userMenu")
 let userIcon = document.querySelector('#userIcon')
+let userNameMenu = document.getElementById('userNameMenu')
+
+
+let email = localStorage.getItem('email');
+
+function validaUser(emailUser) {
+    if(emailUser ==  null) {
+        window.location.href = '../../index.html'
+    } else {
+        userNameMenu.innerText = emailUser
+    }
+}
+
+validaUser(email)
 
 console.log(sairButton, userMenu, userIcon)
 
-let email = localStorage.getItem('email');
 
 userIcon.addEventListener('click', function(){
     if(userMenu.classList.contains('lista-active')) {
@@ -15,3 +28,4 @@ userIcon.addEventListener('click', function(){
         userMenu.classList.add('lista-active')
     }
 })
+
