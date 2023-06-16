@@ -1,5 +1,6 @@
 let sairButton = document.querySelector('#sairButton')
 let userMenu = document.getElementById('userMenu')
+let userIcon = document.getElementById('userIcon')
 
 let email = localStorage.getItem('email');
 
