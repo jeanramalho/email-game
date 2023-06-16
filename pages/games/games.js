@@ -7,7 +7,9 @@ let email = localStorage.getItem('email');
 console.log(email)
 
 function userClick() {
-    if()
+    if(userMenu.classList.contains("lista-active")) {
+        console.log("tem a classe")
+    }
 }
 
 function botaoSair() {
