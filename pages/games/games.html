@@ -8,7 +8,7 @@
 
     <link rel="stylesheet" href="games.css">
    
-    <script src="./games.js"></script>
+    <script src="./games.js" defer></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js" defer></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js" defer></script>
    
@@ -23,13 +23,15 @@
             <p>home</p>
             <div class="icons-header">
                 <ion-icon name="notifications-outline" class="header-notification"></ion-icon>
-
+               
                 <ion-icon name="person-circle-outline" class="header-user" id="userIcon"></ion-icon>
+                
+               
 
                 <div class="header-menu lista-active" id="userMenu">
                     <ul class="lista-menu">
                         <li class="item-menu">email@email.com.br</li>
-                        <li><button class="item-menu item-sair" id="sairButton" onclick=(botaoSair())>sair</button></li>
+                        <li><button class="item-menu item-sair" id="sairButton">sair</button></li>
                     </ul>
                 </div>
                                
