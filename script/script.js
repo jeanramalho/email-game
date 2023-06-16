@@ -38,7 +38,7 @@ function acessarButton() {
         responseEmail.innerHTML = "<p>Insira um email válido</p>",
         inputEmail.value = ""
     } else if( validaEmail() == true) (
-        window.location.href = "game-store/pages/games/games.html",
+        window.location.href = "../pages/games/games.html",
         localStorage.setItem('email', inputEmail.value)
     )
 }
