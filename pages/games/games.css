@@ -121,18 +121,24 @@ body {
     background: #121214;
     height: auto;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-top: 30px 0;
     padding: 30px 0;
+    border: 2px solid red;
 }
 
 .games-grid {
     width: 45%;
     height: auto;
+    flex: 1 0 auto;
     margin-top: 80px;
     margin-bottom: 30px;
+    border: 2px solid #fff;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .games-disponiveis {
@@ -184,6 +190,7 @@ body {
     border-radius: 8px;
     flex-shrink: 0;
     flex-grow: 0;
+    flex: 1 0 auto;
 
 }
 
