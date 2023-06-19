@@ -318,7 +318,7 @@ body {
     }
 
     .card-games {
-        height: 92%;
+        height: auto;
     }
 
     .games-info {
