@@ -181,11 +181,11 @@ body {
 
 .card-game {
     width: 30%;
-    min-width: 100px;
+    min-width: 150px;
     max-width: 200px;
-    height: calc(25vh - 60px);
-    min-height: 80px;
-    max-height: 100px;
+    height: calc(25vh - 20px);
+    min-height: 130px;
+    max-height: 150px;
     border-radius: 8px;
     flex-shrink: 0;
     flex-grow: 0;
