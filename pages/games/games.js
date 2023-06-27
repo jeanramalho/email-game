@@ -5,6 +5,9 @@ let userMenu = document.getElementById("userMenu")
 let userIcon = document.getElementById('userIcon')
 let userNameMenu = document.getElementById('userNameMenu')
 let notIcon = document.getElementById('notIcon')
+let detailsButtons = document.querySelectorAll('.details-button')
+let videoButtons = document.querySelectorAll('.video-button')
+let playButtons = document.querySelectorAll('.play-button')
 
 // Recupera email do usuário
 
@@ -48,4 +51,29 @@ sairButton.addEventListener('click', function(){
     location.reload();
 })
 
+// Abre modal quando botões são clicados
 
+
+detailsButtons.forEach( (btn) => {
+    
+    btn.addEventListener('click', function(){
+        console.log(btn.dataset.detalhes)
+    })
+
+})
+
+videoButtons.forEach( (btn) => {
+
+    btn.addEventListener('click', function(){
+        console.log(btn.dataset.video)
+    })
+
+})
+
+playButtons.forEach( (btn) => {
+
+    btn.addEventListener('click', function(){
+        console.log(btn.dataset.play)
+    })
+
+})
