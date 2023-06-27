@@ -214,6 +214,24 @@ body {
     transition: 0.5s all;
     opacity: 0;
 }
+.card-game:hover:before {
+    opacity: 1;
+}
+
+.card-game .buttons {
+    position: relative;
+    z-index: 3;
+    color: #fff;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.5s all;
+}
+
+.card-game:hover .buttons {
+    opacity: 1;
+    transform: translateY(0px);
+    
+}
 
 .card-game img {
     width: 100%;
