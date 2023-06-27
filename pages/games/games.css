@@ -224,7 +224,9 @@ body {
     width: 100%;
     height: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
+    gap: 5px;
     justify-content: center;
     z-index: 3;
     color: #fff;
@@ -237,6 +239,18 @@ body {
     opacity: 1;
     transform: translateY(0px);
     
+}
+
+.hover-button {
+    width: 60%;
+    height: 18%;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    background: #4E4E51;
+    color: #fff;
+    border-radius: 6px;
+    cursor: pointer;
 }
 
 .card-game img {
