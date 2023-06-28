@@ -34,6 +34,7 @@ body {
     background: #333333;
     border-radius: 10px;
     display: flex;
+    flex-direction: column;
     padding: 10px;
 }
 
@@ -47,6 +48,18 @@ body {
 .btn-close {
     width: 20px;
     height: 20px;
+}
+
+.title-modal {
+    width: 100%;
+    padding: 6px;
+}
+
+.desc-game {
+    width: 100%;
+    padding: 6px;
+    text-align: justify;
+    margin-top: 20px;
 }
 
 .games-container {
