@@ -14,6 +14,7 @@ let videoModal = document.getElementById('videoModal')
 let modalContainer = document.getElementById('modalContainer')
 let descGameModal = document.getElementById('descGameModal')
 let closeBtnsVideo = document.querySelectorAll('.closeBtnVideo')
+let containerVideo = document.getElementById('containerVideo')
 
 // Recupera email do usuário
 
@@ -78,13 +79,20 @@ detailsButtons.forEach( (btn) => {
 
 videoButtons.forEach( (btn) => {
 
-    btn.addEventListener('click', function(){
-        
+    btn.addEventListener('click', function(){     
 
         videoModal.classList.remove('inactive-modal')
-        videoModal.classList.add('active-modal')
-
+        videoModal.classList.add('active-modal')   
         
+        containerVideo.innerHTML = `
+        <iframe src="https://www.youtube.com/embed/${btn.dataset.video}" 
+        class="video-modal"
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        allowfullscreen>
+        </iframe>
+        `
     })
 
 })
@@ -92,7 +100,7 @@ videoButtons.forEach( (btn) => {
 playButtons.forEach( (btn) => {
 
     btn.addEventListener('click', function(){
-        console.log(btn.dataset.play)
+        window.open(btn.dataset.play, '_blank');
     })
 
 })

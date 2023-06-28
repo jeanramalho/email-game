@@ -71,11 +71,19 @@ body {
     margin-bottom: 30px;
 }
 
-.video-modal {
+.container-video {
     width: 100%;
     height: 80%;
+    border-radius: 8px; 
+}
+
+ .video-modal {
+    width: 100%;
+    height: 100%;
     border-radius: 8px;
 }
+
+
 
 .games-container {
     display: grid;
