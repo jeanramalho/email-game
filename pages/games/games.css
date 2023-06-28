@@ -18,7 +18,35 @@ body {
     top: 0;
     background: rgba(0, 0, 0, 0.5);
     z-index: 1;
-    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .5 ease-in-out;
+}
+
+.content-modal {
+    width: 50vw;
+    max-width: 500px;
+    min-width: 280px;
+    height: 60vh;
+    max-height: 350px;
+    min-height: 120px;
+    background: #333333;
+    border-radius: 10px;
+    display: flex;
+    padding: 10px;
+}
+
+.header-modal {
+    width: 100%;
+    display: flex;
+    padding: 8px;
+    justify-content: flex-end;
+}
+
+.btn-close {
+    width: 20px;
+    height: 20px;
 }
 
 .games-container {
