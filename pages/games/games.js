@@ -11,6 +11,7 @@ let playButtons = document.querySelectorAll('.play-button')
 let closeBtns = document.querySelectorAll('.btn-close')
 let detailsModal = document.getElementById('detailsModal')
 let modalContainer = document.getElementById('modalContainer')
+let descGameModal = document.getElementById('descGameModal')
 
 // Recupera email do usuário
 
@@ -66,7 +67,7 @@ detailsButtons.forEach( (btn) => {
         detailsModal.classList.remove('inactive-modal')
         detailsModal.classList.add('active-modal')
 
-        
+        descGameModal.innerHTML = btn.dataset.detalhes
         
     })
 
@@ -98,17 +99,6 @@ closeBtns.forEach( (closeBtn) => {
     })
 })
 
-// function fecharModal() {
 
-//     let modal2 = document.getElementById('modalFull')
-    
-
-
-//     modal2.classList.remove('active-modal')
-//     modal2.classList.add('inactive-modal')
-    
-//     console.log(modal2)
-// }
-        
 
 
