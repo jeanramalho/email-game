@@ -8,6 +8,9 @@ let notIcon = document.getElementById('notIcon')
 let detailsButtons = document.querySelectorAll('.details-button')
 let videoButtons = document.querySelectorAll('.video-button')
 let playButtons = document.querySelectorAll('.play-button')
+let closeBtns = document.querySelectorAll('.btn-close')
+let detailsModal = document.getElementById('detailsModal')
+let modalContainer = document.getElementById('modalContainer')
 
 // Recupera email do usuário
 
@@ -51,16 +54,24 @@ sairButton.addEventListener('click', function(){
     location.reload();
 })
 
-// Abre modal quando botões são clicados
+
+
+//Abre modal quando botões são clicados
 
 
 detailsButtons.forEach( (btn) => {
     
     btn.addEventListener('click', function(){
-        console.log(btn.dataset.detalhes)
+
+        detailsModal.classList.remove('inactive-modal')
+        detailsModal.classList.add('active-modal')
+
+        
+        
     })
 
 })
+
 
 videoButtons.forEach( (btn) => {
 
@@ -77,3 +88,27 @@ playButtons.forEach( (btn) => {
     })
 
 })
+
+// Fecha modal ao clicar no botão de fechar
+
+closeBtns.forEach( (closeBtn) => {
+    closeBtn.addEventListener('click', function(){
+        detailsModal.classList.remove('active-modal')
+        detailsModal.classList.add('inactive-modal')
+    })
+})
+
+// function fecharModal() {
+
+//     let modal2 = document.getElementById('modalFull')
+    
+
+
+//     modal2.classList.remove('active-modal')
+//     modal2.classList.add('inactive-modal')
+    
+//     console.log(modal2)
+// }
+        
+
+
