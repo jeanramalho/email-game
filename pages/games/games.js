@@ -10,8 +10,10 @@ let videoButtons = document.querySelectorAll('.video-button')
 let playButtons = document.querySelectorAll('.play-button')
 let closeBtns = document.querySelectorAll('.btn-close')
 let detailsModal = document.getElementById('detailsModal')
+let videoModal = document.getElementById('videoModal')
 let modalContainer = document.getElementById('modalContainer')
 let descGameModal = document.getElementById('descGameModal')
+let closeBtnsVideo = document.querySelectorAll('.closeBtnVideo')
 
 // Recupera email do usuário
 
@@ -77,7 +79,12 @@ detailsButtons.forEach( (btn) => {
 videoButtons.forEach( (btn) => {
 
     btn.addEventListener('click', function(){
-        console.log(btn.dataset.video)
+        
+
+        videoModal.classList.remove('inactive-modal')
+        videoModal.classList.add('active-modal')
+
+        
     })
 
 })
@@ -96,6 +103,13 @@ closeBtns.forEach( (closeBtn) => {
     closeBtn.addEventListener('click', function(){
         detailsModal.classList.remove('active-modal')
         detailsModal.classList.add('inactive-modal')
+    })
+})
+
+closeBtnsVideo.forEach( (closeBtnVideo) => {
+    closeBtnVideo.addEventListener('click', function(){
+        videoModal.classList.remove('active-modal')
+        videoModal.classList.add('inactive-modal')
     })
 })
 
