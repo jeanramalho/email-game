@@ -39,9 +39,11 @@ function acessarButton() {
         responseEmail.innerHTML = "<p>Insira um email e senha válidos</p>",
         inputEmail.value = ""
         inputSenha.value = ""
-    } else if( validaEmail() == true) (
-        window.location.replace("/pages/games/games.html"),
-        localStorage.setItem('email', inputEmail.value)
-    )
+    } else if( validaEmail() == true) {
+        window.location.replace("/pages/games/games.html")
+        
+        // Arnmazena email no localstorage
+        // localStorage.setItem('email', inputEmail.value)
+    }
 }
 

@@ -20,17 +20,23 @@ let containerVideo = document.getElementById('containerVideo')
 
 let email = localStorage.getItem('email');
 
-// Validação se existe um usuário no localStorage
-
-function validaUser(emailUser) {
-    if(emailUser ==  null) {
-        window.location.href = '../../index.html'
-    } else {
-        userNameMenu.innerText = emailUser
-    }
+//Insere email no meu de usuário
+if(email) {
+    userNameMenu.innerText = emailUser
 }
 
-validaUser(email)
+
+// Validação se existe um usuário no localStorage
+
+// function validaUser(emailUser) {
+//     if(emailUser ==  null) {
+//         window.location.href = '../../index.html'
+//     } else {
+//         userNameMenu.innerText = emailUser
+//     }
+// }
+
+// validaUser(email)
 
 // Escuta o click do ícone de usuário e exibe o menu 
 
