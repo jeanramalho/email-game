@@ -85,7 +85,7 @@ body {
 }
 
 .senha-input:focus {
-    background: #fff;
+    background: #959292;
 }
 
 .input-email input::placeholder {

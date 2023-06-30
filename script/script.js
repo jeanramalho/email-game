@@ -2,6 +2,7 @@
 // Importa elementos html
 
 let inputEmail = document.getElementById('inputEmail')
+let inputSenha = document.getElementById('inputSenha')
 let responseEmail = document.getElementById('responseEmail')
 
 
@@ -35,8 +36,9 @@ else{
 function acessarButton() {
 
     if(inputEmail.value == "" || validaEmail() == false) {
-        responseEmail.innerHTML = "<p>Insira um email válido</p>",
+        responseEmail.innerHTML = "<p>Insira um email e senha válidos</p>",
         inputEmail.value = ""
+        inputSenha.value = ""
     } else if( validaEmail() == true) (
         window.location.replace("/pages/games/games.html"),
         localStorage.setItem('email', inputEmail.value)
