@@ -21,9 +21,15 @@ let containerVideo = document.getElementById('containerVideo')
 let email = localStorage.getItem('email');
 
 //Insere email no meu de usuário
-if(email) {
-    userNameMenu.innerText = emailUser
+
+function insereUser(emailUser) {
+    if(emailUser) {
+        userNameMenu.innerText = emailUser
+    }
 }
+
+insereUser(email)
+
 
 
 // Validação se existe um usuário no localStorage
@@ -62,6 +68,7 @@ notIcon.addEventListener('click', function(){
 sairButton.addEventListener('click', function(){
     localStorage.clear()
     location.reload();
+    window.location.replace("../../index.html")
 })
 
 

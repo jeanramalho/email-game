@@ -43,7 +43,7 @@ function acessarButton() {
         window.location.replace("/pages/games/games.html")
         
         // Arnmazena email no localstorage
-        // localStorage.setItem('email', inputEmail.value)
+        localStorage.setItem('email', inputEmail.value)
     }
 }
 
